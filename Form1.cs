@@ -23,6 +23,8 @@ namespace Booking_with_Radiobuttons
             //else if (rbW3.Checked)
             //{ week = rbW3.Text; }
 
+            //in the groupbox gbWeeks, get all the controls that are radiobuttons, find the first one that is checked, and send back the text on it.
+
             week = gbWeek.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
 
             if (rbMonday.Checked)
