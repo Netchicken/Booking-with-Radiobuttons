@@ -159,6 +159,7 @@
             lbxbooking.Name = "lbxbooking";
             lbxbooking.Size = new Size(176, 109);
             lbxbooking.TabIndex = 4;
+            lbxbooking.SelectedIndexChanged += lbxbooking_SelectedIndexChanged;
             // 
             // gbWeek
             // 

@@ -56,5 +56,10 @@ namespace Booking_with_Radiobuttons
             //  week = gbWeek.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
 
         }
+
+        private void lbxbooking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Text = lbxbooking.SelectedItem.ToString();
+        }
     }
 }
