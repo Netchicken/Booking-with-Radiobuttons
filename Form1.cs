@@ -12,20 +12,17 @@ namespace Booking_with_Radiobuttons
         private void btnMakeBooking_Click(object sender, EventArgs e)
         {
 
-            //if (rbW1.Checked)
-            //{
-            //    week = rbW1.Text;
-            //}
-            //else if (rbW2.Checked)
-            //{
-            //    week = rbW2.Text;
-            //}
-            //else if (rbW3.Checked)
-            //{ week = rbW3.Text; }
+            if (rbW1.Checked)
+            {
+                week = rbW1.Text;
+            }
+            else if (rbW2.Checked)
+            {
+                week = rbW2.Text;
+            }
+            else if (rbW3.Checked)
+            { week = rbW3.Text; }
 
-            //in the groupbox gbWeeks, get all the controls that are radiobuttons, find the first one that is checked, and send back the text on it.
-
-            week = gbWeek.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
 
             if (rbMonday.Checked)
             {
@@ -54,7 +51,9 @@ namespace Booking_with_Radiobuttons
 
             lbxbooking.Items.Add(week + " " + day + " " + time);
 
+            //in the groupbox gbWeeks, get all the controls that are radiobuttons, find the first one that is checked, and send back the text on it.
 
+            //  week = gbWeek.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
 
         }
     }

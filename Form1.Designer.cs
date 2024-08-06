@@ -49,9 +49,9 @@
             // 
             // btnMakeBooking
             // 
-            btnMakeBooking.Location = new Point(256, 64);
+            btnMakeBooking.Location = new Point(362, 116);
             btnMakeBooking.Name = "btnMakeBooking";
-            btnMakeBooking.Size = new Size(147, 44);
+            btnMakeBooking.Size = new Size(176, 24);
             btnMakeBooking.TabIndex = 0;
             btnMakeBooking.Text = "Make a booking";
             btnMakeBooking.UseVisualStyleBackColor = true;
@@ -64,9 +64,9 @@
             groupBox1.Controls.Add(rbMonday);
             groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             groupBox1.ForeColor = Color.DarkRed;
-            groupBox1.Location = new Point(230, 146);
+            groupBox1.Location = new Point(163, 146);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(141, 118);
+            groupBox1.Size = new Size(107, 118);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Day";
@@ -111,9 +111,9 @@
             groupBox2.Controls.Add(rb10);
             groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             groupBox2.ForeColor = Color.ForestGreen;
-            groupBox2.Location = new Point(399, 146);
+            groupBox2.Location = new Point(276, 146);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(141, 118);
+            groupBox2.Size = new Size(80, 118);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
             groupBox2.Text = "Time";
@@ -155,7 +155,7 @@
             // 
             lbxbooking.FormattingEnabled = true;
             lbxbooking.ItemHeight = 15;
-            lbxbooking.Location = new Point(570, 155);
+            lbxbooking.Location = new Point(362, 155);
             lbxbooking.Name = "lbxbooking";
             lbxbooking.Size = new Size(176, 109);
             lbxbooking.TabIndex = 4;
@@ -169,7 +169,7 @@
             gbWeek.ForeColor = Color.RoyalBlue;
             gbWeek.Location = new Point(72, 146);
             gbWeek.Name = "gbWeek";
-            gbWeek.Size = new Size(141, 118);
+            gbWeek.Size = new Size(85, 118);
             gbWeek.TabIndex = 3;
             gbWeek.TabStop = false;
             gbWeek.Text = "Week";
