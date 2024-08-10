@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             btnMakeBooking = new Button();
-            groupBox1 = new GroupBox();
+            gbxDay = new GroupBox();
             rbWednesday = new RadioButton();
             rbTuesday = new RadioButton();
             rbMonday = new RadioButton();
-            groupBox2 = new GroupBox();
+            gbxTime = new GroupBox();
             rb1 = new RadioButton();
             rb12 = new RadioButton();
             rb10 = new RadioButton();
-            lbxbooking = new ListBox();
+            lbxBooking = new ListBox();
             gbWeek = new GroupBox();
             rbW3 = new RadioButton();
             rbW2 = new RadioButton();
             rbW1 = new RadioButton();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
+            gbxDay.SuspendLayout();
+            gbxTime.SuspendLayout();
             gbWeek.SuspendLayout();
             SuspendLayout();
             // 
             // btnMakeBooking
             // 
-            btnMakeBooking.Location = new Point(362, 116);
+            btnMakeBooking.Location = new Point(379, 34);
             btnMakeBooking.Name = "btnMakeBooking";
             btnMakeBooking.Size = new Size(176, 24);
             btnMakeBooking.TabIndex = 0;
@@ -57,19 +57,20 @@
             btnMakeBooking.UseVisualStyleBackColor = true;
             btnMakeBooking.Click += btnMakeBooking_Click;
             // 
-            // groupBox1
+            // gbxDay
             // 
-            groupBox1.Controls.Add(rbWednesday);
-            groupBox1.Controls.Add(rbTuesday);
-            groupBox1.Controls.Add(rbMonday);
-            groupBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            groupBox1.ForeColor = Color.DarkRed;
-            groupBox1.Location = new Point(163, 146);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(107, 118);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Day";
+            gbxDay.BackColor = Color.Lavender;
+            gbxDay.Controls.Add(rbWednesday);
+            gbxDay.Controls.Add(rbTuesday);
+            gbxDay.Controls.Add(rbMonday);
+            gbxDay.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            gbxDay.ForeColor = Color.DarkRed;
+            gbxDay.Location = new Point(149, 61);
+            gbxDay.Name = "gbxDay";
+            gbxDay.Size = new Size(107, 118);
+            gbxDay.TabIndex = 1;
+            gbxDay.TabStop = false;
+            gbxDay.Text = "Day";
             // 
             // rbWednesday
             // 
@@ -104,19 +105,20 @@
             rbMonday.Text = "Monday";
             rbMonday.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gbxTime
             // 
-            groupBox2.Controls.Add(rb1);
-            groupBox2.Controls.Add(rb12);
-            groupBox2.Controls.Add(rb10);
-            groupBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            groupBox2.ForeColor = Color.ForestGreen;
-            groupBox2.Location = new Point(276, 146);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(80, 118);
-            groupBox2.TabIndex = 3;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Time";
+            gbxTime.BackColor = Color.Lavender;
+            gbxTime.Controls.Add(rb1);
+            gbxTime.Controls.Add(rb12);
+            gbxTime.Controls.Add(rb10);
+            gbxTime.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            gbxTime.ForeColor = Color.ForestGreen;
+            gbxTime.Location = new Point(262, 61);
+            gbxTime.Name = "gbxTime";
+            gbxTime.Size = new Size(102, 118);
+            gbxTime.TabIndex = 3;
+            gbxTime.TabStop = false;
+            gbxTime.Text = "Time";
             // 
             // rb1
             // 
@@ -151,26 +153,27 @@
             rb10.Text = "10am";
             rb10.UseVisualStyleBackColor = true;
             // 
-            // lbxbooking
+            // lbxBooking
             // 
-            lbxbooking.FormattingEnabled = true;
-            lbxbooking.ItemHeight = 15;
-            lbxbooking.Location = new Point(362, 155);
-            lbxbooking.Name = "lbxbooking";
-            lbxbooking.Size = new Size(176, 109);
-            lbxbooking.TabIndex = 4;
-            lbxbooking.SelectedIndexChanged += lbxbooking_SelectedIndexChanged;
+            lbxBooking.FormattingEnabled = true;
+            lbxBooking.ItemHeight = 15;
+            lbxBooking.Location = new Point(379, 64);
+            lbxBooking.Name = "lbxBooking";
+            lbxBooking.Size = new Size(176, 109);
+            lbxBooking.TabIndex = 4;
+            lbxBooking.SelectedIndexChanged += lbxbooking_SelectedIndexChanged;
             // 
             // gbWeek
             // 
+            gbWeek.BackColor = Color.Lavender;
             gbWeek.Controls.Add(rbW3);
             gbWeek.Controls.Add(rbW2);
             gbWeek.Controls.Add(rbW1);
             gbWeek.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            gbWeek.ForeColor = Color.RoyalBlue;
-            gbWeek.Location = new Point(72, 146);
+            gbWeek.ForeColor = Color.MediumSeaGreen;
+            gbWeek.Location = new Point(24, 61);
             gbWeek.Name = "gbWeek";
-            gbWeek.Size = new Size(85, 118);
+            gbWeek.Size = new Size(119, 112);
             gbWeek.TabIndex = 3;
             gbWeek.TabStop = false;
             gbWeek.Text = "Week";
@@ -189,7 +192,7 @@
             // rbW2
             // 
             rbW2.AutoSize = true;
-            rbW2.Location = new Point(9, 62);
+            rbW2.Location = new Point(8, 62);
             rbW2.Name = "rbW2";
             rbW2.Size = new Size(68, 19);
             rbW2.TabIndex = 1;
@@ -212,18 +215,19 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Bisque;
+            ClientSize = new Size(689, 465);
             Controls.Add(gbWeek);
-            Controls.Add(lbxbooking);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(lbxBooking);
+            Controls.Add(gbxTime);
+            Controls.Add(gbxDay);
             Controls.Add(btnMakeBooking);
             Name = "Form1";
             Text = "Form1";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            gbxDay.ResumeLayout(false);
+            gbxDay.PerformLayout();
+            gbxTime.ResumeLayout(false);
+            gbxTime.PerformLayout();
             gbWeek.ResumeLayout(false);
             gbWeek.PerformLayout();
             ResumeLayout(false);
@@ -232,15 +236,15 @@
         #endregion
 
         private Button btnMakeBooking;
-        private GroupBox groupBox1;
+        private GroupBox gbxDay;
         private RadioButton rbWednesday;
         private RadioButton rbTuesday;
         private RadioButton rbMonday;
-        private GroupBox groupBox2;
+        private GroupBox gbxTime;
         private RadioButton rb1;
         private RadioButton rb12;
         private RadioButton rb10;
-        private ListBox lbxbooking;
+        private ListBox lbxBooking;
         private GroupBox gbWeek;
         private RadioButton rbW3;
         private RadioButton rbW2;

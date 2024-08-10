@@ -2,7 +2,7 @@ namespace Booking_with_Radiobuttons
 {
     public partial class Form1 : Form
     {
-        string week, day, time;
+
 
         public Form1()
         {
@@ -11,9 +11,13 @@ namespace Booking_with_Radiobuttons
 
         private void btnMakeBooking_Click(object sender, EventArgs e)
         {
+            //create 3 variables to hold 
+            string week = "", day = "", time = "";
 
+            //if you click the first radiobutton
             if (rbW1.Checked)
             {
+                //make the text on that radiobutton pass to teh string week. 
                 week = rbW1.Text;
             }
             else if (rbW2.Checked)
@@ -49,7 +53,7 @@ namespace Booking_with_Radiobuttons
                 time = rb1.Text;
             }
 
-            lbxbooking.Items.Add(week + " " + day + " " + time);
+            lbxBooking.Items.Add(week + " " + day + " " + time);
 
             //in the groupbox gbWeeks, get all the controls that are radiobuttons, find the first one that is checked, and send back the text on it.
 
@@ -59,7 +63,7 @@ namespace Booking_with_Radiobuttons
 
         private void lbxbooking_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Text = lbxbooking.SelectedItem.ToString();
+            lbxBooking.Items.Clear();
         }
     }
 }
